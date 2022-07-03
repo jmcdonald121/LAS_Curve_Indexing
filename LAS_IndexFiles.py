@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
 # Name: LAS File Curve Indexing
-# Version: 0.9
+# Version: 1.0
 # Start Date: 11/29/2021
 # Version Date: 7/1/2022
 # Abstract: This is a Python script that will go through a LAS file and create
@@ -136,7 +136,3 @@ try:
     findex.close()
 except Exception as other:
     print("Something Broke", other)
-
-
-
-
