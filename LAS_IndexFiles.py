@@ -60,8 +60,6 @@ try:
                                 apistring1 = wellparameter[1].strip().strip(" ")
                                 apistring2 = apistring1.split(":")
                                 apinumber = apistring2[0].strip().strip(" ")
-##                                print(apinumber)
-
 
                 #Get the list of the curves
                 if line[0] + line[1] == '~C': #Curve Information block
@@ -81,8 +79,6 @@ try:
                             curve[0] = curve[0].strip().strip(" ") #Remove white spaces in the list
                             curvelist.append(curve[0])
 
-##                    print(curvelist)
-                            
                 #Get the curve values with depth
                 if line[0] + line[1] == '~A': #ASCII Log Values block
                     numberofcurves = len(curvelist) #Get the number of curves in the LAS file
@@ -101,8 +97,6 @@ try:
                         sline = line.strip().strip("\n") #Strips out the \n, i.e. newline character
                         curvevalues = sline
                         curvevalue = curvevalues.split(" ")
-##                        print(curvevalues)
-##                        print(curvevalue)
 
                         if curvevalues[0] != '~':
                             newcurve = [] #Create new list to remove the blank spaces from the curvevalue list
