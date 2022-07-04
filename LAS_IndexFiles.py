@@ -126,10 +126,7 @@ try:
             filename = flas.name.split('\\')
             csvrecord = apinumber + ',' + curveindex + ',' + filename[-1]
             print(csvrecord)
-            try:
-                print(csvrecord, file=findex)
-            except Exception as csvwriteissue:
-                print("Some issue with the CSV writting", csvwriteissue)
+            print(csvrecord, file=findex)
             flas.close()
         else:
             continue
